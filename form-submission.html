@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<meta name="description" content="Lash Dolls Beauty & Training Academy specialises in Advanced Volume & Classic lash application 
+	3D Brow sculpture, HD Brow specialist Training Academy">
+	<meta name="keywords" content="eyelashes, lash extensions, eyelash extensions near me, lashes, lash, mink lashes, false eyelashes, fake eyelashes">
+    <title>Contact | Lash Dolls Beauty &amp; Training Academy</title>
+    <link rel="stylesheet" type="text/css" href="css/style-min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat|Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js" ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW1ostZuDNe-oEKx2_SnosbzswKJmPlDs"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+
+<!-- Form Submission Thank You Box -->
+<div id="thank-you">
+	<a href="contact.html">&times;</a>
+    <i class="far fa-check-circle fa-6x"></i>
+    <h1>Thank You! - We will get back to you ASAP!!</h1>
+</div>
+<!-- Greys out the background when form submitted -->
+<div id="form-sub">
+
+ <div id="wrapper">
+
+	<div id="top-contact-tel">
+		<span><a tel="+353852545061">Call Us: 085 254 5061</a></span>  
+	</div>
+	<div id="top-contact-add">
+		<span class="address">Main Street | Rathoath | Co. Meath</span>
+	</div>
+		
+	<!-- Burger Menu -->
+	<nav id="nav-mobile" onclick="openNav()">
+		<svg width="24" height="24" id="mob-nav" onclick=showNav()>
+	    <line x1="0" y1="2" x2="24" y2="2" style="stroke-width:2;stroke:rgb(0,0,0)" />
+	    <line x1="0" y1="10" x2="24" y2="10" style="stroke-width:2;stroke:rgb(0,0,0)" />
+	    <line x1="0" y1="18" x2="24" y2="18" style="stroke-width:2;stroke:rgb(0,0,0)" />
+		</svg>
+	</nav>
+			
+	<!-- MOBILE MENU -->
+		<!-- The overlay -->
+		<nav id="myNav" class="overlay">
+			
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<!-- Overlay content -->
+			<nav class="overlay-content">
+				<a href="index.html" onclick="closeNav()">Home</a>
+				<a href="about.html" onclick="closeNav()">About</a>
+				<a href="treatments.html" onclick="closeNav()">Treatments</a>
+				<a href="training.html" onclick="closeNav()">Training</a>
+				<a href="contact.html" onclick="closeNav()">Contact</a>
+			</nav>
+		</nav>	
+		
+		<!-- HEADER -->
+	<header id="header">
+		<h1><a href="index.html">Lash Dolls</a></h1>
+			<h6>Beauty &amp; Training Academy</h6>
+			<span>Main Street | Rathoath | Co.Meath | <strong><a tel="+353852545061">Call Us: 085 254 5061</a></strong>
+        </span>
+        <div id="header-social">
+			<a href="https://www.snapchat.com/add/lashdolls2"><i class="fab fa-snapchat-square fa-1x"></i></a>
+            <a href="https://www.facebook.com/Lashdolls2/" target="_blank"><i class="fab fa-facebook fa-1x"></i></a>
+            <a href="https://www.instagram.com/lashdolls2/" target="_blank"><i class="fab fa-instagram fa-1x"></i></a>
+        </div>
+		<!-- DESKTOP NAV -->
+		<nav id="desktop-nav">
+			<ul>	
+				<li><a href="index.html" onclick="closeNav()">Home</a></li>
+				<li><a href="about.html" onclick="closeNav()">About</a></li>
+				<li><a href="treatments.html" onclick="closeNav()">Treatments</a></li>
+				<li><a href="training.html" onclick="closeNav()">Training</a></li>
+				<li><a href="contact.html" onclick="closeNav()">Contact</a></li>
+			</ul>
+		</nav>
+	</header>	
+		
+	
+		
+		<!-- MAIN CONTENT -->
+		<section class="sub-heading">
+			<h1>Contact Lash Dolls</h1>
+		</section>	
+		
+		<div id="contact-container">
+			<form action="php/handler.php" method="post" autocomplete="on">
+				<div>
+					<input type="text" name="name" id="name" placeholder="Name..." required="required" autocomplete="name" maxlength="30" autofocus>
+					<span class="validity"></span>
+				</div>
+				<div>
+					<input type="tel" name="phone" id="phone" placeholder="Phone No..." autocomplete="mobile tel" required="required" minlength="9" maxlength="10">
+					<span class="validity"></span>
+				</div>
+				<div>
+					<textarea name="message" id="message" placeholder="Your message..." required="required" maxlength="200"></textarea>
+					<span class="validity"></span>
+				</div>
+				<input type="submit">
+			</form>	
+		</div>
+		
+		<section id="contact-info">
+           <h3>Address:</h3>
+            <address>
+			Suite 2<br/>
+			The Courtyard<br/>
+			The Village centre<br/>
+			Ratoath<br/>
+			Co.Meath
+			</address>
+			
+			<h3>Telephone:</h3>
+			<span><a tel="+353852545061">Call Us: 085 254 5061</a></span>
+		</section>
+		
+		<!-- MAP -->
+		<section class="sub-heading clear">
+			<h1>Find Us!</h1>
+		</section>	
+		<div id="map">
+			
+		</div>
+		
+		
+
+		<!-- FOOTER -->
+		<footer class="clear">
+			<!-- SITE NAV -->
+			
+			<nav>
+				<ul><li><h3>Links</h3></li>
+					<li><a href="index.html" onclick="closeNav()">Home</a></li>
+					<li><a href="about.html" onclick="closeNav()">About</a></li>
+					<li><a href="treatments.html" onclick="closeNav()">Treatments</a></li>
+					<li><a href="training.html" onclick="closeNav()">Training</a></li>
+					<li><a href="contact.html" onclick="closeNav()">Contact</a></li>
+				</ul>	
+			</nav>
+			<!-- OPENING HOURS -->
+			<table>
+			    <tr>
+			        <th colspan="2">Opening Hours</th>
+			    </tr>
+				<tr>
+					<td>Monday</td>
+					<td>11:30 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>11:30 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>11:30 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>11:30 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>11:30 - 18:30</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>10:00 - 19:00</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>CLOSED</td>
+				</tr>
+			</table>
+			<!-- BOOK NOW -->
+			<aside id="contact-button">
+				<a href="contact.html"><span>book now!</span></a>
+			</aside>				
+			<!-- SOCIAL -->
+			<nav id="social">
+				<a href="https://www.snapchat.com/add/lashdolls2"><i class="fab fa-snapchat-square fa-6x"></i></a>
+				<a href="https://www.facebook.com/Lashdolls2/" target="_blank"><i class="fab fa-facebook fa-6x"></i></a>
+				<a href="https://www.instagram.com/lashdolls2/" target="_blank"><i class="fab fa-instagram fa-6x"></i></a>
+			</nav>
+			<nav id="badge">
+				<a href="http://www.expertlashartist.com/karengrehan" target="_blank">
+				<img src="images/common/expert-lashers.png" alt="lash-dolls-listed-on-lash-experts"/>
+				</a>
+			</nav>
+			<!-- ADDRESS -->
+			
+			<address>
+			<span id ="address-head">Address</span>
+			Suite 2<br/>
+			The Courtyard<br/>
+			The Village centre<br/>
+			Ratoath<br/>
+			Co.Meath
+			</address>
+			<!-- COPYRIGHT -->
+			<span class="copyright">&copy;2018 Lash Dolls</span>
+			
+		</footer>
+		
+</div>
+</div>
+</body>
+</html> 
+
